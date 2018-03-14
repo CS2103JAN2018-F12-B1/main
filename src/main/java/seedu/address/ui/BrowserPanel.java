@@ -20,7 +20,7 @@ import seedu.address.model.person.Person;
  */
 public class BrowserPanel extends UiPart<Region> {
 
-    public static final String DEFAULT_PAGE = "default.html";
+    public static final String DEFAULT_PAGE = "/docs/NUS_logo.html";
     public static final String SEARCH_PAGE_URL =
             "https://se-edu.github.io/addressbook-level4/DummySearchPage.html?name=";
 
@@ -53,7 +53,7 @@ public class BrowserPanel extends UiPart<Region> {
      * Loads a default HTML file with a background that matches the general theme.
      */
     private void loadDefaultPage() {
-        URL defaultPage = MainApp.class.getResource(FXML_FILE_FOLDER + DEFAULT_PAGE);
+        URL defaultPage = MainApp.class.getResource(DEFAULT_PAGE);
         loadPage(defaultPage.toExternalForm());
     }
 
